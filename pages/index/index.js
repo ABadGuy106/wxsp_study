@@ -15,6 +15,13 @@ Page({
       url: '../logs/logs'
     })
   },
+  chageMotto:function(){
+    this.setData(
+      {
+        motto:'你好，微信小程序'
+      }
+    )
+  },
   onLoad: function () {
     if (app.globalData.userInfo) {
       this.setData({

@@ -10,4 +10,5 @@
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
   </view>
+  <button bindtap='chageMotto'>点击修改上边的文字</button>
 </view>
