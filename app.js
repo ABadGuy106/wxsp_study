@@ -1,5 +1,6 @@
 //app.js
 App({
+  //当小程序初始化的时候执行onLaunch里的内容
   onLaunch: function () {
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
@@ -32,6 +33,14 @@ App({
         }
       }
     })
+  },
+  //小程序显示的时候触发
+  onShow: function(){
+    console.log("生命周期函数-监听小程序显示的时候触发");
+  },
+  //小程序隐藏的时候触发
+  onHide: function(){
+    console.log("生命周期函数-监听小程序隐藏的时候触发");
   },
   globalData: {
     userInfo: null
