@@ -1,3 +1,27 @@
 <!--pages/navi/navi.wxml-->
 <text>pages/navi/navi.wxml</text>
 <navigator open-type='navigateBack'>返回页面</navigator>
+<!--定义模板-->
+<template name="msgItem">
+  <view>{{a}}</view>
+  <view>{{b}}</view>
+  <view>{{tName}}</view>
+</template>
+<!--使用模板-->
+<template is="msgItem" data="{{a:111,b:455,tName:name}}"/>
+
+
+<template name="odd">
+  <view> odd </view>
+</template>
+<template name="even">
+  <view> even </view>
+</template>
+<!--
+<block wx:for="{{[1, 2, 3, 4, 5]}}">
+    <template is="{{item % 2 == 0 ? 'even' : 'odd'}}"/>
+</block>
+-->
+<!--模板使用对象-->
+<template is="msgItem" data="{{...obj1}}"/>
+<template is="msgItem" data="{{...obj1,tName:'测试'}}"/>

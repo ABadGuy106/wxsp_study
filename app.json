@@ -20,7 +20,7 @@
         "selectedIconPath": "imgs/featured-actived.png"
       },
       {
-        "pagePath": "pages/logs/logs",
+        "pagePath": "pages/navi/navi",
         "text": "日志",
         "iconPath": "imgs/search.png",
         "selectedIconPath": "imgs/search-actived.png"
