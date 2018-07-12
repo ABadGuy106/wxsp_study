@@ -4,3 +4,6 @@
 <button bindtap='toIndex'>跳转到navi</button>
 <navigator url='../navi/navi' class='active' hover-class='hactive'>跳转到navi</navigator>
 <button bindtap='say'>say hello!</button>
+<!--条件渲染-->
+<button bindtap='chage'>显示/隐藏</button>
+<view wx:if="{{bol}}">显条件渲染示</view>

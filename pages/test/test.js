@@ -11,7 +11,8 @@ Page({
    */
   data: {
     tdata:'测试数据',
-    dataForMe:null
+    dataForMe:null,
+    bol:true
   },
 
   /**
@@ -19,8 +20,14 @@ Page({
    */
   onLoad: function (options) {
     this.setData({
-      dataForMe: appinfo.globalData.aTestData
+      dataForMe: appinfo.globalData.aTestData,
     })
+  },
+  chage: function(){
+    console.log(this.data.bol);
+    this.setData({
+      bol: !this.data.bol
+    });
   },
   toIndex: function(){
     wx.navigateTo({
