@@ -13,14 +13,21 @@
   "tabBar": {
     "list": [{
       "pagePath": "pages/index/index",
-      "text": "首页"
+      "text": "首页",
+      "iconPath": "imgs/featured.png",
+      "selectedIconPath": "imgs/featured-actived.png"
     },{
       "pagePath": "pages/logs/logs",
-      "text": "日志"
+      "text": "日志",
+      "iconPath": "imgs/search.png",
+      "selectedIconPath": "imgs/search-actived.png"
     },{
       "pagePath": "pages/test/test",
-      "text": "测试"
+      "text": "测试",
+      "iconPath": "imgs/profile.png",
+      "selectedIconPath": "imgs/profile-actived.png"
     }],
-    "color": "#ccc"
+    "color": "red",
+    "selectedColor": "green"
   }
 }
