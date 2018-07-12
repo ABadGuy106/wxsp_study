@@ -1,3 +1,4 @@
 <view>test页面</view>
 <view>{{tdata}}</view>
 <view>{{dataForMe}}</view>
+<button bindtap='toIndex'>跳转到首页</button>
