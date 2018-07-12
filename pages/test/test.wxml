@@ -16,3 +16,7 @@
   <view>true-view1</view>
   <view>true-view2</view>
 </block>
+<view>{{bol?"正":"反"}}</view>
+<view>{{"hello"+dataForMe}}</view>
+<!--数组遍历-->
+<view wx:for="{{arr}}">项目:{{item}}</view>
