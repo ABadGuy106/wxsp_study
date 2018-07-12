@@ -20,6 +20,7 @@
     },{
       "pagePath": "pages/test/test",
       "text": "测试"
-    }]
+    }],
+    "color": "#ccc"
   }
 }
