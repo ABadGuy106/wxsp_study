@@ -7,3 +7,12 @@
 <!--条件渲染-->
 <button bindtap='chage'>显示/隐藏</button>
 <view wx:if="{{bol}}">显条件渲染示</view>
+<!--自定义标签-->
+<block wx:if="{{false}}">
+  <view>view1</view>
+  <view>view2</view>
+</block>
+<block wx:if="{{true}}">
+  <view>true-view1</view>
+  <view>true-view2</view>
+</block>
