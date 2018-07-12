@@ -42,7 +42,9 @@ App({
   onHide: function(){
     console.log("生命周期函数-监听小程序隐藏的时候触发");
   },
+  //全局属性定义
   globalData: {
-    userInfo: null
+    userInfo: null,
+    aTestData: '这是我自己定义的全局变量'
   }
 })

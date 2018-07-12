@@ -1,3 +1,5 @@
+var appinfo=getApp();
+
 // pages/test/test.js
 Page({
 
@@ -5,14 +7,17 @@ Page({
    * 页面的初始数据
    */
   data: {
-    tdata:'测试数据'
+    tdata:'测试数据',
+    dataForMe:null
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    this.setData({
+      dataForMe: appinfo.globalData.aTestData
+    })
   },
 
   /**
