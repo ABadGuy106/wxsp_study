@@ -1,4 +1,5 @@
 <view>test页面</view>
 <view>{{tdata}}</view>
 <view>{{dataForMe}}</view>
-<button bindtap='toIndex'>跳转到首页</button>
+<button bindtap='toIndex'>跳转到navi</button>
+<navigator url='../navi/navi' class='active' hover-class='hactive'>跳转到navi</navigator>
