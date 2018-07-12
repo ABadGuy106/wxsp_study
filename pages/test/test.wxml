@@ -3,3 +3,4 @@
 <view>{{dataForMe}}</view>
 <button bindtap='toIndex'>跳转到navi</button>
 <navigator url='../navi/navi' class='active' hover-class='hactive'>跳转到navi</navigator>
+<button bindtap='say'>say hello!</button>

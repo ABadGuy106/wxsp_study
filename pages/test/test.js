@@ -1,4 +1,7 @@
 var appinfo=getApp();
+//引用common.js
+var common = require('../../common/common.js');
+
 
 // pages/test/test.js
 Page({
@@ -23,6 +26,9 @@ Page({
     wx.navigateTo({
       url: '../navi/navi',
     })
+  },
+  say: function(){
+    common.sayHello(this.data.tdata);
   },
   /**
    * 生命周期函数--监听页面初次渲染完成
