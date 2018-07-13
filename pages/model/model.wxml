@@ -23,6 +23,13 @@
 <button size='mini' type='warn' plain='true' disabled='{{disabledBol}}'>按钮</button>
 <form bindsubmit='sub'>
   <input type='text' name='txtName'></input>
+
+  <!--复选框-->
+  <checkbox-group>
+    <label wx:for='{{country}}'>
+      <checkbox value='{{item.name}}' checked='{{item.checked}}'>{{item.value}}</checkbox>
+    </label>
+  </checkbox-group>
   <button form-type='submit'>提交</button>
   <button size='mini' form-type='reset'>重置</button>
 </form>
