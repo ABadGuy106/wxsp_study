@@ -1,0 +1,5 @@
+<view>我是common.wxml</view>
+<import src="common2.wxml"/>
+<template name="item">
+  <text>我是common.wxml里的{{name}}</text>
+</template>

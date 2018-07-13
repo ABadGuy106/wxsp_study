@@ -1,0 +1,4 @@
+<view>我是common2.wxml</view>
+<template name="item2">
+  <text>我是common2.wxml里的{{name2}}</text>
+</template>

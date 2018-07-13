@@ -35,3 +35,10 @@
     <view bindtap='innerTap'style='border:1px solid yellow'>innerTap</view>
   </view>
 </view>
+<!--wxml文件的引用-import -->
+<import src="../../common/common.wxml"/>
+<template is="item" data="{{name:'这是一个name'}}"/>
+<!--不能引用引入文件引入的内容,这种做法是错误的
+<template is="item2" data="{{name2:'这是一个name2'}}"/>-->
+<!--wxml文件的导入-include -->
+<include src="../../common/common.wxml"/>
