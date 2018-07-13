@@ -1,4 +1,5 @@
 // pages/model/model.js
+var progressNum=0;
 Page({
 
   /**
@@ -14,7 +15,8 @@ Page({
     autoplayB:true,
     iconType: [
       'success', 'success_no_circle', 'info', 'warn', 'waiting', 'cancel', 'download', 'search', 'clear'
-    ]
+    ],
+    progress:0
   },
 
   chageTime: function(e){
@@ -33,7 +35,16 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    var that=this;
+    var timer=setInterval(function(){
+      progressNum++;
+      if (progressNum>=100){
+        clearInterval(timer);
+      }
+      that.setData({
+        progress: progressNum
+      });
+    });
   },
 
   /**

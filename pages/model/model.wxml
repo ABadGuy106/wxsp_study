@@ -16,3 +16,5 @@
 <block wx:for='{{iconType}}'>
   <icon type='{{item}}'></icon>
 </block>
+<!--progress-->
+<progress percent='{{progress}}' show-info='true'></progress>
