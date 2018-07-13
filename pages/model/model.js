@@ -11,7 +11,10 @@ Page({
       'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'
     ],
     time:5000,
-    autoplayB:true
+    autoplayB:true,
+    iconType: [
+      'success', 'success_no_circle', 'info', 'warn', 'waiting', 'cancel', 'download', 'search', 'clear'
+    ]
   },
 
   chageTime: function(e){
