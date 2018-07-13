@@ -29,3 +29,9 @@
 <view wx:for="{{arr}}">
 下标是{{index}}：当前项是{{item}}
 </view>
+<!--点击传递-->
+<view bindtap='outerTap' style='border:1px solid red'>outerTap
+  <view catchtap='midleTap'style='border:1px solid green'>midleTap
+    <view bindtap='innerTap'style='border:1px solid yellow'>innerTap</view>
+  </view>
+</view>

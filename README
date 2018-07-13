@@ -15,3 +15,5 @@ tabBar 的颜色设置需要与list同级，否则无法实现.
     }],
     "color": "#ccc"
   }
+在绑定事件的时候，可以使用bindtap和catchtap
+bindtap 会出现事件传递，例如：一个view包含了另一个view,如果两个view都绑定了事件的话，点击被包含的view会触发外边view的事件,但是使用catchtap就会阻断事件的传递。

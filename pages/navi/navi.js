@@ -67,5 +67,14 @@ Page({
    */
   onShareAppMessage: function () {
   
+  },
+  outerTap:function(){
+    console.log('触发了outerTap');
+  },
+  midleTap: function () {
+    console.log('触发了midleTap');
+  },
+  innerTap: function () {
+    console.log('触发了innerTap');
   }
 })
