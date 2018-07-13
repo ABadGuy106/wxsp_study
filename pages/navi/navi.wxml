@@ -42,3 +42,5 @@
 <template is="item2" data="{{name2:'这是一个name2'}}"/>-->
 <!--wxml文件的导入-include -->
 <include src="../../common/common.wxml"/>
+
+<view class='rpx'></view>
