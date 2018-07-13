@@ -16,9 +16,17 @@ Page({
     iconType: [
       'success', 'success_no_circle', 'info', 'warn', 'waiting', 'cancel', 'download', 'search', 'clear'
     ],
-    progress:0
+    progress:0,
+    disabledBol:false
   },
-
+  chageDisabled:function(){
+    this.setData({
+      disabledBol: !this.data.disabledBol
+    })
+  },
+  sub:function(e){
+    console.log('表单提交',e.detail.value);
+  },
   chageTime: function(e){
     var chageValue = e.detail.value;
     this.setData({
