@@ -9,9 +9,23 @@ Page({
       'http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg',
       'http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg',
       'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'
-    ]
+    ],
+    time:5000,
+    autoplayB:true
   },
 
+  chageTime: function(e){
+    var chageValue = e.detail.value;
+    this.setData({
+      time: chageValue
+    })
+  },
+
+  cgAutoplay: function(){
+    this.setData({
+      autoplayB: !this.data.autoplayB
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
