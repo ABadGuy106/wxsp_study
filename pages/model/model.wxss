@@ -10,10 +10,13 @@
 }
 .a{
   background-color: green;
+  flex:1;
 }
 .b{
   background-color: yellow;
+  flex:1;
 }
 .c{
   background-color: red;
+  flex:2;
 }
