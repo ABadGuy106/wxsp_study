@@ -25,7 +25,28 @@ Page({
       { name: 'JPN', value: '日本' },
       { name: 'ENG', value: '英国' },
       { name: 'TUR', value: '法国' },
-    ]
+    ],
+    citise:[
+      '北京','上海','南京','天津'
+    ],
+    index:0,
+    pickerTime:'09:01',
+    date:'2018-07-13'
+  },
+  bindPickerChange: function(e){
+    this.setData({
+      index:e.detail.value
+    })
+  },
+  bindTimeChange:function(e){
+    this.setData({
+      pickerTime: e.detail.value
+    })
+  },
+  bindDateChange:function(e){
+    this.setData({
+      date: e.detail.value
+    })
   },
   chageDisabled:function(){
     this.setData({
