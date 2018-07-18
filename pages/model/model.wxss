@@ -22,3 +22,6 @@
   background-color: red;
   flex:2;
 }
+.text{
+  border: 1rpx solid red;
+}
