@@ -52,6 +52,17 @@ Page({
       }
     })
   },
+  showToast: function(){
+    wx.showToast({
+      title: '删除成功',
+      //icon:'success',
+      icon:'loading',
+      duration:3000,
+      success:function(){
+        console.log("显示消息框成功1")
+      }
+    })
+  },
   bindPickerChange: function(e){
     this.setData({
       index:e.detail.value
