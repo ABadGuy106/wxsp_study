@@ -33,6 +33,17 @@ Page({
     pickerTime:'09:01',
     date:'2018-07-13'
   },
+  showAction: function(){
+    wx.showActionSheet({
+      itemList: ['A','B','C'],
+      success:function(res){
+        if(!res.cancel){
+          console.log(res.tapIndex);
+        }
+      }
+    })
+  },
+
   bindPickerChange: function(e){
     this.setData({
       index:e.detail.value

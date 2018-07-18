@@ -56,7 +56,11 @@
 <!-- <switch></switch>
 <switch type='checkbox'></switch> -->
 <!--多行文本-->
-<textarea class='text'></textarea>
+<!-- <textarea class='text'></textarea> -->
+<!--操作菜单-->
+<button bindtap='showAction'>显示操作菜单</button>
+
+
   <button form-type='submit'>提交</button>
   <button size='mini' form-type='reset'>重置</button>
 </form>
