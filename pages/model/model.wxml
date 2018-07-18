@@ -52,6 +52,9 @@
 </radio-group>
 <!--滑动选择器-->
 <slider show-value min='100' max='1000' step='100'></slider>
+<!--开关选择器-->
+<switch></switch>
+<switch type='checkbox'></switch>
   <button form-type='submit'>提交</button>
   <button size='mini' form-type='reset'>重置</button>
 </form>
