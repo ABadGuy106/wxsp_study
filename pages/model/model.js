@@ -43,7 +43,15 @@ Page({
       }
     })
   },
-
+  shwoModal:function(){
+    wx.showModal({
+      title: '提示',
+      content: '提示内容',
+      success:function(res){
+        console.log(res);
+      }
+    })
+  },
   bindPickerChange: function(e){
     this.setData({
       index:e.detail.value
